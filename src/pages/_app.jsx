@@ -6,7 +6,7 @@ import { VariantChoicesProvider } from "../utils/ninetailed";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NinetailedProvider clientId={process.env.NINETAILED_API_KEY}>
+    <NinetailedProvider clientId={process.env.NINETAILED_API_KEY} environment=>
       <VariantChoicesProvider>
         <Component {...pageProps} />
         <Toaster position="bottom-right" />
